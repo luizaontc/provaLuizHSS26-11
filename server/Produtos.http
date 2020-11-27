@@ -3,8 +3,8 @@ POST http://localhost:1234/Produto/cadastrar
 content-type: application/json
 
 {  
-    "nome": "lalalala",
-    "codigoBarras": "123456",
+    "nome": "testestes",
+    "codigoBarras": "987",
     "preco": 100,
     "criadoEm": "2020-10-04"
 }

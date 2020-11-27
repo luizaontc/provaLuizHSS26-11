@@ -1,0 +1,24 @@
+<button (click)="navigateToCreateProduto()">Cadastrar Produto</button>
+
+<div class="table-responsive">
+
+    <h1 align="center"> Lista de Produtos </h1>
+    <table class="table">
+            <tr>
+                <th scope="col">Nome</th>                          
+                <th scope="col">Código de Barras</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Criado em</th>
+
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr *ngFor="let Produto of produtos">
+                <td>{{Produto.nome}}</td>                                        
+                <td>{{Produto.codigoBarra}}</td>
+                <td>{{Produto.preco}}</td>
+                <td>{{Produto.criadoEm}}</td>
+            </tr>
+    </table>
+</div>

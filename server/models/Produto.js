@@ -15,7 +15,7 @@ const produto = new mongoose.Schema({
     required: [true, "O campo preço é obrigatório."],
   },
   criadoEm: {
-    type: Date,
+    type: String,
     required: [true, "O campo Data é obrigatório."]
   }
 });

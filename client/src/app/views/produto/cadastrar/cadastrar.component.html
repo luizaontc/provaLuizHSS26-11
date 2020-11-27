@@ -1,0 +1,24 @@
+<button (click)="navigateToListProduto()">Listar Produtos</button>
+
+<div class="container">
+    <h2 >Cadastrar Produtos</h2>
+    <table class="table table-hover mt-4">
+
+        <tr>
+            <th>Nome</th>
+            <th>Código de Barra</th>
+            <th>Preço</th>
+            <th>Criado em</th>
+        </tr>
+
+      <tbody>
+        <td> <input placeholder="Nome" name="nome" [(ngModel)]="Produto.nome"></td>
+        <td> <input placeholder="Código de Barra" name="codigoBarras" [(ngModel)]="Produto.codigoBarras"></td>
+        <td> <input placeholder="Preço" name="preco" [(ngModel)]="Produto.preco"></td>
+        <td> <input placeholder="Criado em" name="criadoEm" [(ngModel)]="Produto.criadoEm"></td>
+        <td> <button (click)="cadastrar()">Salvar</button>
+        </td>
+
+      </tbody>
+    </table>
+  </div>
